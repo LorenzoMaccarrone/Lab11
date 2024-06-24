@@ -32,6 +32,9 @@ class View(ft.UserControl):
         # text field for the name
         self._ddyear = ft.Dropdown(label="Anno")
         self._ddcolor = ft.Dropdown(label="Colore")
+        #potevo anche inserire queste righe nel fillDD
+        for i in range(2015,2019):
+            self._ddyear.options.append(ft.dropdown.Option(text=str(i)),)
 
         # button for the "creat graph" reply
         self.btn_graph = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handle_graph)
