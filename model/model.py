@@ -35,7 +35,7 @@ class Model:
                         pesoInt=peso[0]
                         peso.clear()
                     #da v1 a v0
-                    peso = DAO.getPeso(v0.Product_number,v1.Product_number,year)
+                    peso = DAO.getPeso(v1.Product_number,v0.Product_number,year)
                     if len(peso)!=0:
                         pesoInt+=peso[0]
                         peso.clear()
